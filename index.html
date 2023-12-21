@@ -1,0 +1,69 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Speed Typing Game</title>
+        
+        <!-- Linking external CSS stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Main content wrapper -->
+        <div class="wrapper">
+            <!-- Input field for typing -->
+            <input type="text" class="input-field">
+            
+            <!-- Content box containing typing text and result details -->
+            <div class="content-box">
+                <div class="typing-text">
+                    <!-- Paragraph element with id "paragraph" for displaying the typing text -->
+                    <p id="paragraph"></p>
+                </div>
+                
+                <!-- Container for result details and try again button -->
+                <div class="content">
+                    <ul class="result-details">
+                        <!-- List item for displaying time left -->
+                        <li class="time">
+                            <p>
+                                Time Left:
+                            </p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        
+                        <!-- List item for displaying the number of mistakes -->
+                        <li class="mistake">
+                            <p>
+                                Mistakes:
+                            </p>
+                            <span>0</span>
+                        </li>
+                        
+                        <!-- List item for displaying words per minute (WPM) -->
+                        <li class="wpm">
+                            <p>
+                                WPM:
+                            </p>
+                            <span>0</span>
+                        </li>
+                        
+                        <!-- List item for displaying characters per minute (CPM) -->
+                        <li class="cpm">
+                            <p>
+                                CPM:
+                            </p>                           
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Button for restarting the typing game -->
+                    <button>Try Again</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Including external JavaScript file with defer attribute for asynchronous loading -->
+        <script src="script.js" defer></script>
+    </body>
+</html>
